@@ -1,0 +1,10 @@
+.search{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    width: 30%;
+}
+.input{
+    all: unset;
+    width: 100%;
+}
