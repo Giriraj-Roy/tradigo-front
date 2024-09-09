@@ -1,0 +1,27 @@
+.coinList{
+    display: block;
+    width: 100%;
+}
+.coinListAll{
+    display: flex;
+    width: 100%;
+}
+.coinListAll div{
+    display: flex;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+}
+.coinListAll div img{
+    width: 50;
+    margin: 1rem;
+}
+.coinListAll span{
+    width: 12%;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+}

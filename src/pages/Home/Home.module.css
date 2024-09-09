@@ -1,6 +1,10 @@
-body{
-    display: block;
+.body{
+    /* display: block; */
     width: 100%;
-    /* background-color: blue; */
-    padding: 0%;
+    padding: 0;
+    margin: 0;
+}
+.bodySplit{
+    display: flex;
+    width: 100%;
 }

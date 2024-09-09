@@ -1,14 +1,5 @@
 .body{
     width: 50%;
-    /* background-color: aqua; */
+    /* background-color: green; */
     /* min-height: 90vh; */
-}
-.coinListOptions{
-    display: flex;
-}
-.coinListOptions div{
-    margin: 0.5rem 1rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid whitesmoke;
-    border-radius: 1.5rem;
 }

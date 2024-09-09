@@ -1,18 +1,25 @@
 import React from 'react'
 import styles from './CoinOptions.module.css'
+import CoinOptionsData from '../../../assets/data/CoinOptions.data'
 
 interface CoinOptionsProps {
-    item : {
-        id: string,
-        tag: string
-    }
+  id: number,
+  tag: string
 }
 
-const CoinOptions : React.FC<CoinOptionsProps> = ({item}) => {
+const CoinOptions : React.FC = () => {
   return (
-    <div className={styles.options}>
-      {item.tag}
-    </div>
+    <div className={styles.coinListOptions}>
+        {
+          CoinOptionsData.map((options : CoinOptionsProps) => {
+            return(
+              <div key={options?.id}>
+                {options?.tag}
+              </div>
+            )
+          })
+        }
+      </div>
   )
 }
 

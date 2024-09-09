@@ -1,8 +1,9 @@
 .nav{
     display: flex;
-    width: 100vw;
+    width: 100%;
+    /* max-width: 1440px; */
     min-height: fit-content;
-    padding: 0.25rem 0rem;
+    padding: 0.75rem 0rem;
     background-color: black;
     border-bottom: 1px solid whitesmoke;
 }

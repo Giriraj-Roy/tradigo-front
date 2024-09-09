@@ -1,4 +1,4 @@
-const CoinOptions = [
+const CoinOptionsData = [
   {
     id: 1,
     tag: "All",
@@ -16,4 +16,4 @@ const CoinOptions = [
     tag: "Top Losers",
   },
 ];
-export default CoinOptions;
+export default CoinOptionsData;
