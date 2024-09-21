@@ -1,5 +1,5 @@
 import axios from "axios"
-import baseCoinUrl from "../constants/baseCoinUrl"
+import baseCoinUrl from "../utils/baseCoinUrl"
 
 const GETAllCoins = async ()=>{
     try{

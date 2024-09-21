@@ -1,7 +1,7 @@
 .coinListOptions{
     display: flex;
     width: 100%;
-    border-bottom: 1px solid whitesmoke;
+    /* border-bottom: 1px solid whitesmoke; */
 }
 .coinListOptions div{
     width: 12%;

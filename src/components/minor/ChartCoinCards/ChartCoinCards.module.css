@@ -1,0 +1,11 @@
+.coinCard{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+.coinValues{
+    display: block;
+    margin: 0 1rem;
+}

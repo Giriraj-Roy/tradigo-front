@@ -13,7 +13,7 @@ const CoinOptions : React.FC = () => {
         {
           CoinOptionsData.map((options : CoinOptionsProps) => {
             return(
-              <div key={options?.id}>
+              <div className={styles.coinChips} key={options?.id}>
                 {options?.tag}
               </div>
             )

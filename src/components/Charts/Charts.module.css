@@ -1,0 +1,26 @@
+.chart{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chartChipsContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+.chartChips {
+    display: flex;
+    justify-content:center;
+    align-items: center ;
+    width:  5rem ;
+    padding:  0.5rem 0 ;
+    border:  2px solid rgb(57, 58, 64) ;
+    border-radius:  0.35rem ;
+    cursor: pointer;
+}
+.chartChips:hover{
+    background-color: #f4f4f529;
+}

@@ -4,8 +4,10 @@
     /* max-width: 1440px; */
     min-height: fit-content;
     padding: 0.75rem 0rem;
-    background-color: black;
-    border-bottom: 1px solid whitesmoke;
+    /* background-color: "#6d6d6e"; */
+    background: linear-gradient(to top, #343435, #000000);
+    box-shadow: 5px 5px 5px #343435;
+    /* border-bottom: 1px solid whitesmoke; */
 }
 .navLeft{
     display: flex;
