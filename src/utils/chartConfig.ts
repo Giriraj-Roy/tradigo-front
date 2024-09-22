@@ -12,6 +12,10 @@ export const chartConfig = (data : StockData[], svgRef : React.RefObject<SVGSVGE
         const svg = d3.select(svgRef.current);
         const width = 600;
         const height = 400;
+        // const width : number = (svgRef.current?.getBoundingClientRect().width || 1200)/2
+        // const height : number = (svgRef.current?.getBoundingClientRect().height || 800)/2
+
+
 
 
         svg.selectAll("*").remove();

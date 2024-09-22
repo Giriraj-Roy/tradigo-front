@@ -61,7 +61,7 @@ const Charts: React.FC = () => {
     return (
       <div className={styles.chart}>
         <ChartChips />
-        <svg ref={svgRef} width={"80%"} height={"60%"} />
+        <svg ref={svgRef} width={"80%"} height={"60%"} viewBox="0 0 650 450" />
         <ChartCoinCards/>
       </div>
     );
