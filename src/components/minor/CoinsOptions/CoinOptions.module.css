@@ -13,5 +13,9 @@
     text-align: center;
 }
 .coinChips:hover {
-    background-color: #f4f4f529;
+    background-color: #191c25;
+    box-shadow: 5px 5px 10px #232336;
+}
+.coinChips:active{
+    background-color: #232336;
 }

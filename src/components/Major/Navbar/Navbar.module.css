@@ -5,8 +5,8 @@
     min-height: fit-content;
     padding: 0.75rem 0rem;
     /* background-color: "#6d6d6e"; */
-    background: linear-gradient(to top, #343435, #000000);
-    box-shadow: 5px 5px 5px #343435;
+    /* background: linear-gradient(to top, #343435, #181a20); */
+    /* box-shadow: 5px 5px 5px #343435; */
     /* border-bottom: 1px solid whitesmoke; */
 }
 .navLeft{
