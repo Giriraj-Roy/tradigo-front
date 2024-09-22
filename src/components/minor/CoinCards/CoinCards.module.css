@@ -1,0 +1,35 @@
+.coinList{
+    display: block;
+    width: 100%;
+    height: 78vh;
+    overflow: auto;
+}
+.coinListAll{
+    display: flex;
+    width: 100%;
+    height: 4.25rem;
+    cursor: pointer;
+    color: white;
+}
+.coinListAll:hover{
+    background-color: #f4f4f529;
+}
+.coinListAll div{
+    display: flex;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+}
+.coinListAll div img{
+    width: 50;
+    margin: 1rem;
+}
+.coinListAll span{
+    width: 12%;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+}
