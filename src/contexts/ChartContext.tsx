@@ -1,5 +1,6 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import CoinAttributes from '../interfaces/CoinList.interface';
+import useAppContext from '../hooks/useAppContext';
 
 // export type Theme = 'light' | 'dark';
 
@@ -16,7 +17,13 @@ export const ChartContext = createContext<ChartContextType | undefined>(undefine
 
 
 export const ChartProvider: React.FC<ChartProviderProps> = ({ children }) => {
-    const [currentCoin, setCurrentCoin] = useState<CoinAttributes>(dummyCoin);
+
+    const { coinList } = useAppContext()
+    const [currentCoin, setCurrentCoin] = useState<CoinAttributes>(coinList[0] || dummyCoin);
+
+    useEffect(()=>{
+      setCurrentCoin(coinList[0])
+    },[coinList])
   
     const value = {
         currentCoin, setCurrentCoin

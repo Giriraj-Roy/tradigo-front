@@ -15,9 +15,6 @@ export const chartConfig = (data : StockData[], svgRef : React.RefObject<SVGSVGE
         // const width : number = (svgRef.current?.getBoundingClientRect().width || 1200)/2
         // const height : number = (svgRef.current?.getBoundingClientRect().height || 800)/2
 
-
-
-
         svg.selectAll("*").remove();
 
         const xScale = d3.scaleTime()
@@ -58,10 +55,21 @@ export const chartConfig = (data : StockData[], svgRef : React.RefObject<SVGSVGE
 
         const linePath = svg.append("path")
             .datum(data)
-            .attr("fill", "#468")
+            .attr("fill", "none")
             .attr("stroke", "steelblue")
             .attr("stroke-width", 2)
             .attr("d", line);
+
+        const area = d3.area<StockData>()
+            .x((d: StockData) => xScale(new Date(d.date)))
+            .y0(height)
+            .y1((d: StockData) => yScale(d.price)); 
+    
+        // Append the area path
+        svg.append("path")
+            .datum(data)
+            .attr("fill", "steelblue")
+            .attr("d", area);
 
         linePath
             .on("mouseover", function() { tooltip.style("display", null); })
