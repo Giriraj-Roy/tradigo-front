@@ -31,7 +31,7 @@ const CoinCards:React.FC<CoinCardsProps> = ({ele}) => {
                           height={50}
                       />
                       <div style={{fontSize: "1.2rem", margin: "0 0.5rem", width: "fit-content"}}>{ele?.symbol.toUpperCase()}</div>
-                      <span style={{color: "#b2b8c1", margin: "0 0.5rem", width: 'fit-content', fontWeight: 400}} >{ele?.name}</span>
+                      <div style={{color: "#b2b8c1", margin: "0 0.5rem", width: 'fit-content', fontWeight: 400, overflow: 'auto', whiteSpace: 'nowrap', textOverflow: 'ellipsis'}} >{ele?.name}</div>
                     </div>
                     <span>{ele?.symbol.toUpperCase()}</span>
                     <span>{ele?.total_volume}</span>

@@ -4,6 +4,7 @@
   padding: 0;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
+
 }
 :root {
   font-family: "IBM Plex Sans",Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -19,6 +20,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+    /* overflow: hidden; */
 
 }
 ::-webkit-scrollbar{

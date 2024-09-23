@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './LLM.module.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import ChatList from '../../minor/ChatList/ChatList'

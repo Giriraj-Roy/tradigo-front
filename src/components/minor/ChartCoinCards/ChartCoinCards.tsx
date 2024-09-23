@@ -1,4 +1,3 @@
-import React from "react";
 import useCurrentCoin from "../../../hooks/useCurrentCoin";
 import styles from "./ChartCoinCards.module.css";
 

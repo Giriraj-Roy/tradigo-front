@@ -9,10 +9,6 @@ import CoinListAll from '../../minor/CoinListAll/CoinListAll';
 
 const CoinList : React.FC = () => {
 
-  const [coinList, setCoinList] = useState<Array<CoinAttributes>>([]);
-
-
-
   return (
     <div className={styles.body}>
       <CoinOptions/>

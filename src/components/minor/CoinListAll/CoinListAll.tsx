@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import styles from './CoinListAll.module.css'
 import { motion } from 'framer-motion'
 import GETAllCoins, { GETTop50Coins, GETTopGainers, GETTopLosers } from '../../../apis/CoinApis'
-import CoinAttributes from '../../../interfaces/CoinList.interface'
-import useCurrentCoin from '../../../hooks/useCurrentCoin'
 import CoinCards from '../CoinCards/CoinCards'
 import useAppContext from '../../../hooks/useAppContext'
 
 const CoinListAll = () => {
 
-    // const [coinList, setCoinList] = useState<Array<CoinAttributes>>([])
     const { coinList, setCoinList, coinOption } = useAppContext();
 
     useEffect(()=>{

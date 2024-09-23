@@ -68,7 +68,7 @@ export const chartConfig = (data : StockData[], svgRef : React.RefObject<SVGSVGE
         // Append the area path
         svg.append("path")
             .datum(data)
-            .attr("fill", "steelblue")
+            .attr("fill", "#7dbbfa")
             .attr("d", area);
 
         linePath
