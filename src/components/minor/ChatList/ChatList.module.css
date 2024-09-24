@@ -5,6 +5,8 @@
     border-bottom: 1px solid white;
     justify-content: center;
     align-items: center;
+    background-image: radial-gradient(circle, #1a1a1a 0%, #333333 70%, #000000 100%);
+    border-radius: 6rem;
 }
 .chatBody{
     display: flex;
@@ -13,18 +15,21 @@
     /* height: 12rem; */
     /* height: 65vh; */
     height: calc(65vh - 1rem);
-
+    /* background-color: #393a40; */
+    /* background: transparent; */
+    background-image: radial-gradient(circle, #1a1a1a 0%, #333333 70%, #000000 100%);
     overflow: auto;
 }
 .chatLeft{
     display: flex;
     width: fit-content;
-    max-width: 40%;
-    margin: 0.1rem 0;
-    padding: 0.2rem 1rem;
+    max-width: 95%;
+    margin: 0.4rem 0;
+    padding: 0.6rem 1.5rem;
     align-self: flex-start;
     justify-content: center;
-    background-color: #393a40;
+    /* background-color: #393a40; */
+    background: transparent;
     border-top-right-radius: clamp(0.5rem, 2rem, 5rem);
     border-bottom-right-radius: clamp(0.5rem, 2rem, 5rem);
     border-bottom-left-radius: clamp(0.5rem, 2rem, 5rem);
@@ -35,7 +40,7 @@
     width: fit-content;
     max-width: 40%;
     margin: 0.1rem 0;
-    padding: 0.2rem 1rem;
+    padding: 0.5rem 1rem;
     justify-content: center;
     align-self: flex-end;
     /* background-color: rgb(199, 198, 198); */

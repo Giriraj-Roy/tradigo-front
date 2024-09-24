@@ -4,6 +4,9 @@ import send from '../../../assets/images/send.png'
 import { AskGroq } from '../../../apis/PromptApis'
 import useAppContext from '../../../hooks/useAppContext'
 import { useRegex } from '../../../hooks/useRegex'
+import llama from '../../../assets/images/llama.png'
+import cow from '../../../assets/images/cow.png'
+
 
 
 const ChatList = () => {
@@ -57,7 +60,11 @@ const ChatList = () => {
                         <div key={index} className={`${index%2==0 ? styles.chatLeft : styles.chatRight}`}>
                             {index===chatData.length-1 && <div ref={chatEndRef} /> }
                             {index%2==0 
-                                ? <div dangerouslySetInnerHTML={{ __html: ele }} />
+                                ?
+                                <div style={{display:"flex", alignItems: "start", justifyContent: "flex-start"}}> 
+                                    <img src={cow} alt='cow' width={30} height={30} style={{margin: "1rem", marginTop: 0, objectFit:"cover"}}/>
+                                    <div dangerouslySetInnerHTML={{ __html: ele }} />
+                                </div>
                                 : ele
                             }
                         </div>
